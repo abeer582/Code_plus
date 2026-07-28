@@ -1,20 +1,27 @@
 import 'package:flutter/material.dart';
 
+import 'TaskTwo/Anonymous _functions.dart';
+import 'TaskTwo/Arrow_functions.dart';
+import 'TaskTwo/Higher-Order_functions.dart';
 import 'Task_one..dart';
 
 void main() {
-  return Student();
-  runApp(const MyApp());
+  //return Student();
+  print("------------------------------------------------------------------------");
+  execuit(()=>print("Hello Dart!"));
+  execuit(()=>print("------------------------------------------------------------------------"));
+  print(square(5));
+  execuit(()=>print("------------------------------------------------------------------------"));
+  print(greet("Abeer"));
+  execuit(()=>print("------------------------------------------------------------------------"));
+  print(isEven(5));
+  execuit(()=>print("------------------------------------------------------------------------"));
+  calculate(5, 2,( number,number1)=>number+number1);
+  execuit(()=>print("------------------------------------------------------------------------"));
+  calculate(5, 2,( number,number1)=>number*number1);
+  execuit(()=>print("------------------------------------------------------------------------"));
+  calculate(5, 2,( number,number1)=>number-number1);
+
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      );
-  }
-}
 
